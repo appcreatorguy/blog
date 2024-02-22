@@ -22,7 +22,7 @@ export default ({title, description, children, date, tags}) => {
                     <nav class="post-tags">
                     {tags.map((tag) => {
                         return (
-                            <a class="tag" href={`/tags/${tag}.html`}>{tag}</a>
+                            <a class="tag" href={`/tags/${tag}`}>{tag}</a>
                         )
                     })}
                     </nav>
