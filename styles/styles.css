@@ -28,7 +28,7 @@
 
         --accent-color: var(--ctp-mocha-mauve);
         --accent-color-1: var(--ctp-mocha-rosewater);
-        --accent-color-selection: rgba(var(--ctp-mocha-mauve-rgb) 0.3);
+        --accent-color-selection: rgba(var(--ctp-mocha-mauve-rgb)); /* alpha makes the color disappear somehow */
 
         color-scheme: dark;
     }
@@ -66,6 +66,27 @@ body > * {
 
 main {
     flex: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    padding: 0.5em 0.25rem;
+    border-bottom: 1px solid var(--accent-color-selection);
+    margin-bottom: 1em;
+    
+}
+
+nav a {
+    padding: 0.5em;
+    border-bottom: none;
+    color: var(--fg-color);
+}
+
+nav p {
+    margin: 0.5em 0.2rem;
 }
 
 footer {
