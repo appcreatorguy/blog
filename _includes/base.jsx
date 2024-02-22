@@ -1,3 +1,15 @@
+const Navbar = (data) => {
+  const { url } = data;
+
+  return (
+    <nav>
+      <p>alphacerium</p>
+      <a href="/">Home</a>
+      <a href="/blog">Blog</a>
+    </nav>
+  );
+}
+
 export default (data) => {
     const { lang, title, children } = data;
   
@@ -17,6 +29,7 @@ export default (data) => {
         </head>
   
         <body>
+          <Navbar data={data} />
           <main>{children.body}</main>
           <footer>
             <p>alphacerium is Manas Mengle (मानस मेंगले)</p>

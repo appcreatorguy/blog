@@ -32,7 +32,7 @@ site.use(date());
 site.use(favicon());
 site.use(feed({
     output: ["/feed.json", "/feed.rss"],
-    query: "type=posts",
+    query: "type=post",
     info: {
         title: "the alphacerium blog",
         description: "ramblings from alphacerium",
