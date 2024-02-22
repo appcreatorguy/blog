@@ -19,6 +19,13 @@ export default ({title, description, children, date, tags}) => {
             <>
                 <header>
                     <h1>{title}</h1>
+                    <nav class="post-tags">
+                    {tags.map((tag) => {
+                        return (
+                            <a class="tag" href={`/tags/${tag}.html`}>{tag}</a>
+                        )
+                    })}
+                    </nav>
                     <p>
                         <time datetime={date.toISOString().split("T")[0]}>{date.toISOString().split("T")[0]}</time>
                     </p>

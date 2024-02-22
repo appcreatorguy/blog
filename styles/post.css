@@ -1,0 +1,9 @@
+.tag {
+  text-transform: lowercase;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.25em 0.25em;
+  margin-right: 0.8em;
+  background-color: var(--bg-color-surface);
+  border-radius: 0.25em;
+}
