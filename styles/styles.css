@@ -1,0 +1,129 @@
+/* Catppuccin colors! */
+@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+
+@font-face {
+    font-family: 'Verdana fallback';
+    src: local(Verdana);
+}
+
+:root {
+    --bg-color: var(--ctp-latte-base);
+    --bg-color-surface: var(--ctp-latte-crust);
+
+    --fg-color: var(--ctp-latte-text);
+
+    --accent-color: var(--ctp-latte-mauve);
+    --accent-color-1: var(--ctp-latte-rosewater);
+    --accent-color-selection: rgba(var(--ctp-latte-mauve-rgb) 0.3); 
+
+    color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: var(--ctp-mocha-base);
+        --bg-color-surface: var(--ctp-mocha-crust);
+
+        --fg-color: var(--ctp-mocha-text);
+
+        --accent-color: var(--ctp-mocha-mauve);
+        --accent-color-1: var(--ctp-mocha-rosewater);
+        --accent-color-selection: rgba(var(--ctp-mocha-mauve-rgb) 0.3);
+
+        color-scheme: dark;
+    }
+}
+
+::selection {
+    background-color: var(--accent-color-selection);
+}
+
+html {
+    font-family: "Hind", "Verdana fallback", sans-serif;
+    font-size: 15px;
+    font-size-adjust: from-font;
+
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
+
+body {
+    margin: 0;
+    padding: 0 lem;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+
+    overflow-x: hidden;
+}
+
+body > * {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent-color);
+
+    transition-property: color border-color;
+    transition-duration: 0.2s;
+    transition-delay: 0.02s;
+}
+
+a:hover, a:focus, a:active {
+    color: var(--accent-color-1);
+    border-color: var(--accent-color-1);
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin: 0.75rem 0.25rem;
+    margin-top: 1rem;
+    line-height: 1.25em;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 0.75rem 0.25rem;
+    margin-top: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0.75rem 0.25rem;
+    margin-top: 0.5rem;
+}
+
+h4, h5, h6 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0.75rem 0.25rem;
+}
+
+p {
+    margin: 1.25rem 0.25rem;
+}
