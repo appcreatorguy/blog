@@ -38,7 +38,8 @@ header {
 }
 
 header h1 {
-  font-size: 1.75rem;
+  font-size: 2rem;
+  font-weight: 700;
 }
 
 header > * {
@@ -59,6 +60,10 @@ main img {
   transform: translateX(-50%);
 }
 
+main :not(header) h1 {
+  font-family: 'Hind', "Verdana fallback", sans-serif;
+}
+
 @media (max-width: 90ch) {
   main img {
     max-width: 90vw;
@@ -68,6 +73,7 @@ main img {
 h1, h2, h3 {
   margin-top: 1.5em;
   margin-bottom: 0;
+  font-weight: 500;
 }
 
 .footnote-ref a, a.footnote-backref {
