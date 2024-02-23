@@ -5,12 +5,14 @@ export default ({search, tag}: Lume.Data, helpers: Lume.Helpers) => {
     return {
         head: (
             <>
-                <link rel="stylesheet" href="/styles/posts/posts.css" />
+                <link rel="stylesheet" href="/styles/posts.css" />
             </>
         ),
         body: (
             <>
-                <h1>posts tagged with "{tag}"</h1>
+                <header>
+                    <h1>posts tagged with "{tag.toLowerCase()}"</h1>
+                </header>
 
                 {posts.map((post) => {
                     const postDate = post.date.toISOString().split("T")[0];

@@ -1,16 +1,23 @@
 export const layout = "base.jsx";
+export const title = "Tags";
 
 export default (data) => {
     const tagPages = data.search.pages("type=tag", "tag");
-    // console.log(data.search.pages("Music"));
     return {
+        head: (
+            <>
+                <link rel="stylesheet" href="/styles/posts.css" />
+            </>
+        ),
         body: (
             <>
-                <h1>Tags</h1>
+                <header>
+                    <h1>tags</h1>
+                </header>
                 {tagPages.map((page) => {
                     return (
                         <p>
-                        <a href={page.url}>{page.tag}</a>
+                        <a href={page.url}>{page.tag.toLowerCase()}</a>
                         </p>
                     )
                 })}

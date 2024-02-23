@@ -1,6 +1,7 @@
 export const layout = "base.jsx";
 export const url = "/posts/";
 export const type = "posts";
+export const title = "Posts";
 
 export default (data: Lume.Data) => {
     const posts = data.search
@@ -8,7 +9,7 @@ export default (data: Lume.Data) => {
     return {
         head: (
             <>
-                <title>Blog</title>
+                <link rel="stylesheet" href="/styles/posts.css" />
             </>
         ),
         body: (
