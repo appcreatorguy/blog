@@ -3,6 +3,7 @@ const Navbar = (data) => {
 
   return (
     <nav>
+      <img class="pfp" src="/assets/profile.png" alt="alphacerium icon" />
       <p>alphacerium</p>
       <a href="/">Home</a>
       <a href="/blog">Blog</a>

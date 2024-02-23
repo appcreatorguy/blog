@@ -1,5 +1,5 @@
 /* Catppuccin colors! */
-@import url('https://unpkg.com/@catppuccin/palette/css/catppuccin.css');
+@import url('./external/catppuccin.css');
 
 @font-face {
     font-family: 'Verdana fallback';
@@ -12,9 +12,10 @@
 
     --fg-color: var(--ctp-latte-text);
 
-    --accent-color: var(--ctp-latte-mauve);
+    --accent-color-rgb: var(--ctp-latte-mauve-rgb);
+    --accent-color: rgb(var(--accent-color-rgb));
     --accent-color-1: var(--ctp-latte-rosewater);
-    --accent-color-selection: rgba(var(--ctp-latte-mauve-rgb) 0.3); 
+    --accent-color-selection: rgba(var(--accent-color-rgb), 0.3); 
 
     color-scheme: light;
 }
@@ -26,9 +27,10 @@
 
         --fg-color: var(--ctp-mocha-text);
 
-        --accent-color: var(--ctp-mocha-mauve);
+        --accent-color-rgb: var(--ctp-mocha-mauve-rgb);
+        --accent-color: rgb(var(--accent-color-rgb));
         --accent-color-1: var(--ctp-mocha-rosewater);
-        --accent-color-selection: rgba(var(--ctp-mocha-mauve-rgb)); /* alpha makes the color disappear somehow */
+        --accent-color-selection: rgba(var(--accent-color-rgb), 0.3); /* alpha makes the color disappear somehow */
 
         color-scheme: dark;
     }
@@ -74,7 +76,7 @@ nav {
     gap: 1rem;
 
     padding: 0.5em 0.25rem;
-    border-bottom: 1px solid var(--accent-color-selection);
+    border-bottom: 3px solid var(--accent-color-selection);
     margin-bottom: 1em;
     
 }
@@ -87,6 +89,14 @@ nav a {
 
 nav p {
     margin: 0.5em 0.2rem;
+}
+ 
+nav img.pfp {
+    width: 3rem;
+    height: 3rem;
+    margin: -0.2em 0.25rem;
+    border-radius: 15%;
+    border: 0.15rem solid var(--accent-color-selection);
 }
 
 footer {
