@@ -1,5 +1,6 @@
 @font-face {
     font-family: 'Hind';
+    src: url('/blog/assets/fonts/hind/hind-bold.ttf');
     src: url('/assets/fonts/hind/hind-bold.ttf');
     font-weight: 700;
     font-style: normal;
@@ -8,6 +9,7 @@
 
 @font-face {
     font-family: 'Hind';
+    src: url('/blog/assets/fonts/hind/hind-medium.ttf');
     src: url('/assets/fonts/hind/hind-medium.ttf');
     font-weight: 500;
     font-style: normal;
@@ -16,6 +18,7 @@
 
 @font-face {
     font-family: 'Hind';
+    src: url('/blog/assets/fonts/hind/hind-regular.ttf');
     src: url('/assets/fonts/hind/hind-regular.ttf');
     font-weight: normal;
     font-style: normal;
@@ -24,7 +27,10 @@
 
 @font-face {
     font-family: 'SNPro';
+    src: url('/blog/assets/fonts/snpro/snpro-black.otf');
     src: url('/assets/fonts/snpro/snpro-black.otf');
+    src: url('/blog/assets/fonts/snpro/snpro-black.woff') format('woff'),
+         url('/blog/assets/fonts/snpro/snpro-black.woff2') format('woff2');
     src: url('/assets/fonts/snpro/snpro-black.woff') format('woff'),
          url('/assets/fonts/snpro/snpro-black.woff2') format('woff2');
     font-weight: 900;
@@ -34,7 +40,10 @@
 
 @font-face {
     font-family: 'SNPro';
+    src: url('/blog/assets/fonts/snpro/snpro-heavy.otf');
     src: url('/assets/fonts/snpro/snpro-heavy.otf');
+    src: url('/blog/assets/fonts/snpro/snpro-heavy.woff') format('woff'),
+         url('/blog/assets/fonts/snpro/snpro-heavy.woff2') format('woff2');
     src: url('/assets/fonts/snpro/snpro-heavy.woff') format('woff'),
          url('/assets/fonts/snpro/snpro-heavy.woff2') format('woff2');
     font-weight: 800;
@@ -44,7 +53,10 @@
 
 @font-face {
     font-family: 'SNPro';
+    src: url('/blog/assets/fonts/snpro/snpro-bold.otf');
     src: url('/assets/fonts/snpro/snpro-bold.otf');
+    src: url('/blog/assets/fonts/snpro/snpro-bold.woff') format('woff'),
+         url('/blog/assets/fonts/snpro/snpro-bold.woff2') format('woff2');
     src: url('/assets/fonts/snpro/snpro-bold.woff') format('woff'),
          url('/assets/fonts/snpro/snpro-bold.woff2') format('woff2');
     font-weight: 700;
@@ -54,7 +66,10 @@
 
 @font-face {
     font-family: 'SNPro';
+    src: url('/blog/assets/fonts/snpro/snpro-semibold.otf');
     src: url('/assets/fonts/snpro/snpro-semibold.otf');
+    src: url('/blog/assets/fonts/snpro/snpro-semibold.woff') format('woff'),
+         url('/blog/assets/fonts/snpro/snpro-semibold.woff2') format('woff2');
     src: url('/assets/fonts/snpro/snpro-semibold.woff') format('woff'),
          url('/assets/fonts/snpro/snpro-semibold.woff2') format('woff2');
     font-weight: 600;
@@ -64,7 +79,10 @@
 
 @font-face {
     font-family: 'SNPro';
+    src: url('/blog/assets/fonts/snpro/snpro-medium.otf');
     src: url('/assets/fonts/snpro/snpro-medium.otf');
+    src: url('/blog/assets/fonts/snpro/snpro-medium.woff') format('woff'),
+         url('/blog/assets/fonts/snpro/snpro-medium.woff2') format('woff2');
     src: url('/assets/fonts/snpro/snpro-medium.woff') format('woff'),
          url('/assets/fonts/snpro/snpro-medium.woff2') format('woff2');
     font-weight: 500;
@@ -74,7 +92,10 @@
 
 @font-face {
     font-family: 'SNPro';
+    src: url('/blog/assets/fonts/snpro/snpro-regular.otf');
     src: url('/assets/fonts/snpro/snpro-regular.otf');
+    src: url('/blog/assets/fonts/snpro/snpro-regular.woff') format('woff'),
+         url('/blog/assets/fonts/snpro/snpro-regular.woff2') format('woff2');
     src: url('/assets/fonts/snpro/snpro-regular.woff') format('woff'),
          url('/assets/fonts/snpro/snpro-regular.woff2') format('woff2');
     font-weight: 400;
@@ -84,7 +105,10 @@
 
 @font-face {
     font-family: 'SNPro';
+    src: url('/blog/assets/fonts/snpro/snpro-light.otf');
     src: url('/assets/fonts/snpro/snpro-light.otf');
+    src: url('/blog/assets/fonts/snpro/snpro-light.woff') format('woff'),
+         url('/blog/assets/fonts/snpro/snpro-light.woff2') format('woff2');
     src: url('/assets/fonts/snpro/snpro-light.woff') format('woff'),
          url('/assets/fonts/snpro/snpro-light.woff2') format('woff2');
     font-weight: 300;
@@ -94,7 +118,10 @@
 
 @font-face {
     font-family: 'SNPro';
+    src: url('/blog/assets/fonts/snpro/snpro-thin.otf');
     src: url('/assets/fonts/snpro/snpro-thin.otf');
+    src: url('/blog/assets/fonts/snpro/snpro-thin.woff') format('woff'),
+         url('/blog/assets/fonts/snpro/snpro-thin.woff2') format('woff2');
     src: url('/assets/fonts/snpro/snpro-thin.woff') format('woff'),
          url('/assets/fonts/snpro/snpro-thin.woff2') format('woff2');
     font-weight: 100;
