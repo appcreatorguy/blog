@@ -50,7 +50,7 @@ site.use(jsx());
 site.use(katex({ options: { displayMode: false } }));
 site.use(resolveUrls());
 site.use(relativeUrls());
-site.use(slugifyUrls({lowercase: false}));
+site.use(slugifyUrls());
 site.use(postcss());
 
 const customizeMarkdown = (md: any) => {
