@@ -11,13 +11,14 @@ import resolveUrls from "lume/plugins/resolve_urls.ts";
 import relativeUrls from "lume/plugins/relative_urls.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import postcss from "lume/plugins/postcss.ts";
+import metas from "lume/plugins/metas.ts";
 
 import mdAnchor from "npm:markdown-it-anchor";
 import mdFootnote from "npm:markdown-it-footnote";
 
 const site = lume(
     {
-        location: new URL("https://alphacerium.dev"),
+        location: new URL("https://alphacerium.dev/blog"),
     },
     {
         markdown: { options: { linkify: true, typographer: true } },
@@ -36,10 +37,15 @@ site.use(feed({
     info: {
         title: "the alphacerium blog",
         description: "ramblings from alphacerium",
+        lang: "en",
+
     },
     items: {
         title: "=title",
         description: "=excerpt",
+        content: "$.post-content",
+        published: "=created",
+        updated: "=date",
     },
 }));
 site.use(filter_pages({
@@ -52,6 +58,7 @@ site.use(resolveUrls());
 site.use(relativeUrls());
 site.use(slugifyUrls());
 site.use(postcss());
+site.use(metas());
 
 const customizeMarkdown = (md: any) => {
     md.use(mdAnchor, { level: 2 });
