@@ -128,6 +128,7 @@ a:hover, a:focus, a:active {
 }
 
 h1 {
+    font-family: 'SNPro', "Verdana fallback", sans-serif;
     font-size: 2.3rem;
     font-weight: 600;
     margin: 0.75rem 0.25rem;
