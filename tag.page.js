@@ -1,4 +1,4 @@
-export const layout = "tag.njk";
+export const layout = "tag.tsx";
 
 export default function* ({ search }) {
   const tags = search.values("tags");
@@ -6,9 +6,9 @@ export default function* ({ search }) {
   for (const tag of search.values("tags")) {
     yield {
       url: `/tags/${tag}/`,
-      title: `Tagged “${tag}”`,
+      title: `tagged “${tag.toLowerCase()}”`,
       type: "tag",
-      tag,
+      tag: tag,
     };
   }
 }

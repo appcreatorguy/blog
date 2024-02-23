@@ -1,24 +1,22 @@
 export const layout = "base.jsx";
-export const url = "/blog/";
-export const type = "undefined";
 
-export default (data: Lume.Data) => {
-    const posts = data.search
-    .pages("type=post", "date=desc")
+export default ({search, tag}: Lume.Data, helpers: Lume.Helpers) => {
+    const posts = search.pages("'" + tag + "' " + "type=post", "date=desc");
     return {
         head: (
             <>
-                <title>Blog</title>
+                <link rel="stylesheet" href="/styles/posts/posts.css" />
             </>
         ),
         body: (
             <>
-                <h1>Blog</h1>
+                <h1>posts tagged with "{tag}"</h1>
+
                 {posts.map((post) => {
                     const postDate = post.date.toISOString().split("T")[0];
 
                     return (
-                        <article>
+                        <article key={post.url}>
                             <h2>
                                 <a href={post.url}>{post.title}</a>
                             </h2>
@@ -28,7 +26,11 @@ export default (data: Lume.Data) => {
                         </article>
                     );
                 })}
+
+                <hr/>
+                
+                <p>see <a href="/tags/">all tags</a></p>
             </>
-        ),
-    };
-};
+        )
+    }
+}

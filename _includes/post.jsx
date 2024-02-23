@@ -1,3 +1,5 @@
+import createSlugifier from "lume/core/slugifier.ts";
+
 export const layout = "base.jsx";
 
 export default ({title, description, children, date, tags}) => {
@@ -21,8 +23,10 @@ export default ({title, description, children, date, tags}) => {
                     <h1>{title}</h1>
                     <nav class="post-tags">
                     {tags.map((tag) => {
+                        const slugify = createSlugifier();
+                        const tagSlug = slugify(tag);
                         return (
-                            <a class="tag" href={`/tags/${tag}`}>{tag}</a>
+                            <a class="tag" href={`/tags/${tagSlug}`}>{tag}</a>
                         )
                     })}
                     </nav>
