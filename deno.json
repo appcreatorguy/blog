@@ -9,9 +9,9 @@
       "lume/types.ts"
     ],
     "jsx": "react-jsx",
-    "jsxImportSource": "npm:preact" 
+    "jsxImportSource": "npm:preact"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.0.3/"
+    "lume/": "https://deno.land/x/lume@v2.1.0/"
   }
 }
