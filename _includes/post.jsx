@@ -35,7 +35,9 @@ export default ({title, description, children, date, tags}) => {
                     </p>
                 </header>
 
-                {children}
+                <div class="post-content">
+                    {children}
+                </div>
             </>
         )
     }
