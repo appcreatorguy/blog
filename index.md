@@ -2,16 +2,8 @@
 layout: main-page.jsx
 title: Hello, World!
 ---
-# Welcome to the website
+# welcome to my blog
 
-## 2nd level heading
+I'll mainly be talking about tech and my experiences, but I hope to occasionally also write about music and other hobbies.
 
-### Here's a third level
-
-This is a test website using **Lume,** a static site generator for Deno.[^1]
-
-Here's a [link](post.md) to a post
-
-Hello, World!
-
-[^1]: Here's the footnote!
+check out some of my [posts](./posts/)

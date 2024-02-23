@@ -38,3 +38,7 @@ article .desc {
     white-space: nowrap;
     flex: 1;
 }
+
+time {
+    color: var(--label-color);
+}

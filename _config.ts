@@ -56,6 +56,34 @@ site.use(postcss());
 const customizeMarkdown = (md: any) => {
     md.use(mdAnchor, { level: 2 });
     md.use(mdFootnote);
+
+    // footnote captions without surrounding square brackets
+    md.renderer.rules.footnote_caption = (tokens: any, idx: any) => {
+        let n = Number(tokens[idx].meta.id + 1).toString();
+        if (tokens[idx].meta.subId > 0) {
+            n += ":" + tokens[idx].meta.subId;
+        }
+        return n;
+    };
+
+    // insert .non-footnote-content around markdown so that we can flexbox expand it
+    // (and push the footnotes section to the bottom of the body)
+    md.core.ruler.before("block", "content-wrapper-open", (state: any) => {
+        state.tokens.push(new state.Token("non_footnote_content_open"));
+    });
+    md.core.ruler.before(
+        "footnote_tail",
+        "content-wrapper-close",
+        (state: any) => {
+        state.tokens.push(new state.Token("non_footnote_content_close"));
+        }
+    );
+    md.renderer.rules.non_footnote_content_open = (_tokens: any, _idx: any) => {
+        return `<div class="non-footnote-content">`;
+    };
+    md.renderer.rules.non_footnote_content_close = (_tokens: any, _idx: any) => {
+        return `</div>`;
+    };
 };
 
 const md: any = await new Promise((resolve) => site.hooks.markdownIt(resolve));
