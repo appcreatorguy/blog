@@ -1,6 +1,6 @@
 export const layout = "base.jsx";
-export const url = "/blog/";
-export const type = "undefined";
+export const url = "/posts/";
+export const type = "posts";
 
 export default (data: Lume.Data) => {
     const posts = data.search
@@ -13,7 +13,9 @@ export default (data: Lume.Data) => {
         ),
         body: (
             <>
-                <h1>Blog</h1>
+                <header>
+                    <h1>posts</h1>
+                </header>
                 {posts.map((post) => {
                     const postDate = post.date.toISOString().split("T")[0];
 
@@ -24,6 +26,9 @@ export default (data: Lume.Data) => {
                             </h2>
                             <p>
                                 (<time datetime={postDate}>{postDate}</time>)
+                            </p>
+                            <p class="desc">
+                                {post.description}
                             </p>
                         </article>
                     );
