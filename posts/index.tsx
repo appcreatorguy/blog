@@ -1,3 +1,5 @@
+import createSlugifier from "lume/core/slugifier.ts";
+
 export const layout = "base.jsx";
 export const url = "/posts/";
 export const type = "posts";
@@ -24,6 +26,15 @@ export default (data: Lume.Data) => {
                         <article>
                             <h2>
                                 <a href={post.url}>{post.title}</a>
+                                <nav class="post-tags">
+                                    {post.tags.map((tag) => {
+                                        const slugify = createSlugifier();
+                                        const tagSlug = slugify(tag);
+                                        return (
+                                            <a class="tag" href={`/tags/${tagSlug}`}>{tag}</a>
+                                        )
+                                    })}
+                                </nav>
                             </h2>
                             <p>
                                 (<time datetime={postDate}>{postDate}</time>)

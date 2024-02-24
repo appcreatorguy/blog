@@ -3,7 +3,7 @@
   font-size: 1rem;
   line-height: 1;
   padding: 0.25em 0.25em;
-  margin-right: 0.8em;
+  margin-right: 0.6em;
   background-color: var(--bg-color-surface);
   border-radius: 0.25em;
   margin-bottom: 0.25em;
@@ -78,4 +78,12 @@ h1, h2, h3 {
 
 .footnote-ref a, a.footnote-backref {
   border-bottom: none;
+}
+
+nav.post-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 0rem;
+
+  border-bottom: 2px solid var(--accent-color-selection);  
 }

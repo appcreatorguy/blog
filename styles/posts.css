@@ -42,3 +42,25 @@ article .desc {
 time {
     color: var(--label-color);
 }
+
+nav.post-tags {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+
+    padding: 0.4em 0.3rem;
+    border-bottom: initial;
+    margin-bottom: initial;
+    
+}
+
+.tag {
+    text-transform: lowercase;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0.25em 0.25em;
+    margin-right: 0.6em;
+    background-color: var(--bg-color-surface);
+    border-radius: 0.25em;
+    margin-bottom: 0.25em;
+  }
