@@ -60,7 +60,7 @@ main img {
   transform: translateX(-50%);
 }
 
-main :not(header) h1 {
+main :not(header) h2, main :not(header) h3 {
   font-family: 'Hind', "Verdana fallback", sans-serif;
 }
 
