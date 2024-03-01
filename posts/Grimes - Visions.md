@@ -3,6 +3,7 @@ title: "Album Review: Grimes - Visions"
 description: My review of the 2012 album Visions, by Canadian electronic artist Grimes.
 tags:
  - Music
+ - Electronic
 excerpt: 'Released in 2012, Visions marked Canadian electronic solo artist Grimes first record while in the spotlight, and her third full album release since she broke into fame in 2010/2011. The album, according to Grimes, was written over three weeks, with the recording session lasting 9 days without sleep or food, and a "ton of amphetamines". While recording, she became convinced her music was "channelling God"'
 created: 2024-02-23T03:54:11Z
 ---
