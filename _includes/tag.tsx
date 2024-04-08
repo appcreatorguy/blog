@@ -15,7 +15,7 @@ export default ({search, tag}: Lume.Data, helpers: Lume.Helpers) => {
                 </header>
 
                 {posts.map((post) => {
-                    const postDate = post.date.toISOString().split("T")[0];
+                    const postDate = post.created.toISOString().split("T")[0];
 
                     return (
                         <article key={post.url}>

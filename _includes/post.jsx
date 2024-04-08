@@ -2,7 +2,7 @@ import createSlugifier from "lume/core/slugifier.ts";
 
 export const layout = "base.jsx";
 
-export default ({title, description, children, date, tags}) => {
+export default ({title, description, children, date, tags, created}) => {
     return {
         head: (
             <>
@@ -31,7 +31,7 @@ export default ({title, description, children, date, tags}) => {
                     })}
                     </nav>
                     <p>
-                        <time datetime={date.toISOString().split("T")[0]}>{date.toISOString().split("T")[0]}</time>
+                        <time datetime={created.toISOString().split("T")[0]}>{created.toISOString().split("T")[0]}</time>
                     </p>
                 </header>
 

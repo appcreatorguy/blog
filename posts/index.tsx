@@ -20,7 +20,7 @@ export default (data: Lume.Data) => {
                     <h1>posts</h1>
                 </header>
                 {posts.map((post) => {
-                    const postDate = post.date.toISOString().split("T")[0];
+                    const postDate = post.created.toISOString().split("T")[0];
 
                     return (
                         <article>
