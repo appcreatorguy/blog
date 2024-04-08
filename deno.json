@@ -12,6 +12,6 @@
     "jsxImportSource": "npm:preact"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.1.0/"
+    "lume/": "https://deno.land/x/lume@v2.1.2/"
   }
 }
