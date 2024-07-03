@@ -4,6 +4,7 @@
     "specifiers": {
       "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4",
       "npm:@types/estree@1.0.5": "npm:@types/estree@1.0.5",
+      "npm:@types/nunjucks@3.2.6": "npm:@types/nunjucks@3.2.6",
       "npm:autoprefixer@10.4.18": "npm:autoprefixer@10.4.18_postcss@8.4.35",
       "npm:axios": "npm:axios@1.6.8",
       "npm:cheerio": "npm:cheerio@1.0.0-rc.12",
@@ -389,6 +390,10 @@
       },
       "@types/node@18.16.19": {
         "integrity": "sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==",
+        "dependencies": {}
+      },
+      "@types/nunjucks@3.2.6": {
+        "integrity": "sha512-pHiGtf83na1nCzliuAdq8GowYiXvH5l931xZ0YEHaLMNFgynpEqx+IPStlu7UaDkehfvl01e4x/9Tpwhy7Ue3w==",
         "dependencies": {}
       },
       "a-sync-waterfall@1.0.1": {
@@ -1329,7 +1334,9 @@
     "https://deno.land/std@0.220.0/http/etag.ts": "9c120f11b2e57fdaeda28a6cf6c060a3d203e58f56e5856a717281dd0318eedc",
     "https://deno.land/std@0.220.0/http/file_server.ts": "fe0a77a4de8c3dae3afa206b4317e2dce0b497252fb7319bf7febd6e65fded80",
     "https://deno.land/std@0.220.0/http/status.ts": "ed61b4882af2514a81aefd3245e8df4c47b9a8e54929a903577643d2d1ebf514",
+    "https://deno.land/std@0.220.0/io/types.ts": "acecb3074c730b5ff487ba4fe9ce51e67bd982aa07c95e5f5679b7b2f24ad129",
     "https://deno.land/std@0.220.0/io/write_all.ts": "24aac2312bb21096ae3ae0b102b22c26164d3249dff96dbac130958aa736f038",
+    "https://deno.land/std@0.220.0/json/common.ts": "33f1a4f39a45e2f9f357823fd0b5cf88b63fb4784b8c9a28f8120f70a20b23e9",
     "https://deno.land/std@0.220.0/jsonc/mod.ts": "1756f094e00894ec27416b4fcccbcf445e73892a83cf1937de3aad7de2d5da7c",
     "https://deno.land/std@0.220.0/jsonc/parse.ts": "06fbe10f0bb0cba684f7902bf7de5126b16eb0e5a82220c98a4b86675c7f9cff",
     "https://deno.land/std@0.220.0/log/_config.ts": "489e11b6d3c917bf5fc954c5e914c095d3480efd924d1e85f2fc576468581c54",

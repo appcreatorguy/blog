@@ -27,6 +27,7 @@ const site = lume(
 
 site.copy("assets");
 site.copy("styles");
+site.copy("scripts");
 
 site.use(code_highlight());
 site.use(date());
