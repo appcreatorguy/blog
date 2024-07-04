@@ -44,7 +44,7 @@ export default (data) => {
           <main>{children.body}</main>
           <footer>
             <p>alphacerium is Manas Mengle (मानस मेंगले)</p>
-            <p>This site anoymously collects analytics using <a href="https://umami.alphacerium.dev/share/5rY7aEQOWI7QnXhE/alphacerium.dev">umami</a>. you can <a id="optOut" href="#">opt out</a> here.</p>
+            <p>This site anoymously collects analytics using <a href="https://umami.alphacerium.dev/share/5rY7aEQOWI7QnXhE/alphacerium.dev">umami</a>. you can <a id="optOut" href="javascript:void(0)">opt out</a> here.</p>
             <p><a href="https://github.com/appcreatorguy/blog">guts</a></p>
           </footer>
         </body>
