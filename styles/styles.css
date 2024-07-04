@@ -46,7 +46,7 @@
 
 html {
     font-family: "Hind", "Verdana fallback", sans-serif;
-    font-size: 15px;
+    font-size: 12pt;
     font-size-adjust: from-font;
 
     background-color: var(--bg-color);
@@ -166,4 +166,16 @@ h4, h5, h6 {
 
 p {
     margin: 1.25rem 0.25rem;
+}
+
+code, kbd {
+    font-family: "Iosevka", "Source Code Pro", "Fira Mono", "Roboto Mono", "SF Mono", monospace;
+    font-size: 0.9em;
+    font-size-adjust: from-font;
+    font-weight: 600;
+
+    display: inline-block;
+    padding: 0.225em 0.35em;
+    background: var(--bg-color-surface);
+    border-radius: 8px;
 }
