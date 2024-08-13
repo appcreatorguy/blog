@@ -71,7 +71,7 @@ main :not(header) h2, main :not(header) h3 {
 }
 
 h1, h2, h3 {
-  margin-top: 1.5em;
+  margin-top: 1em;
   margin-bottom: 0;
   font-weight: 500;
 }

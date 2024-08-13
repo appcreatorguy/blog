@@ -1,5 +1,6 @@
 /* Catppuccin colors! */
 @import url('./external/catppuccin.css');
+@import url('./external/catppuccinhljs.css');
 
 @font-face {
     font-family: 'Verdana fallback';
@@ -46,7 +47,7 @@
 
 html {
     font-family: "Hind", "Verdana fallback", sans-serif;
-    font-size: 12pt;
+    font-size: 13pt;
     font-size-adjust: from-font;
 
     background-color: var(--bg-color);
@@ -170,12 +171,12 @@ p {
 
 code, kbd {
     font-family: "Iosevka", "Source Code Pro", "Fira Mono", "Roboto Mono", "SF Mono", monospace;
-    font-size: 0.9em;
+    font-size: 0.95em;
     font-size-adjust: from-font;
     font-weight: 600;
 
     display: inline-block;
     padding: 0.225em 0.35em;
-    background: var(--bg-color-surface);
+    background: var(--bg-color-surface) !important; 
     border-radius: 8px;
 }

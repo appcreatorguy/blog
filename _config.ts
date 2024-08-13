@@ -29,7 +29,11 @@ site.copy("assets");
 site.copy("styles");
 site.copy("scripts");
 
-site.use(code_highlight());
+site.use(  
+    code_highlight({
+        extensions: [".js", ".jsx", ".ts", ".tsx", ".html", ".md"],
+    })
+);
 site.use(date());
 site.use(favicon());
 site.use(feed({
